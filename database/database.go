@@ -40,8 +40,6 @@ func ConnectDb() {
 	log.Println("running migrations")
 	db.AutoMigrate(&models.Password_recommendation{})
 
-	// db.Create(&db.Logger)
-
 	DB = Dbinstance{
 		Db: db,
 	}
